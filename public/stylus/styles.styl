@@ -1,0 +1,1837 @@
+.flex-container a:active,
+.flex-container a:focus,
+.flexslider a:active,
+.flexslider a:focus
+  outline: 0
+
+.flex-control-nav,
+.flex-direction-nav,
+.slides
+  margin: 0
+  padding: 0
+  list-style: none
+
+.flexslider
+  padding: 0
+
+.flexslider .slides
+  overflow: hidden
+
+.flexslider .slides>li
+  display: none
+  -webkit-backface-visibility: hidden
+
+.flexslider .slides img
+  width: 100%
+  display: block
+  border-radius: 2px
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  -o-border-radius: 2px
+
+.flex-pauseplay span
+  text-transform: capitalize
+
+html[xmlns] .slides
+  display: block
+
+* html .slides
+  height: 1%
+
+.no-js .slides>li:first-child
+  display: block
+
+.flexslider
+  margin: 0
+  background: 0 0
+  position: relative
+  zoom: 1
+
+.flex-viewport
+  max-height: 2000px
+  -webkit-transition: all 1s ease
+  -moz-transition: all 1s ease
+  transition: all 1s ease
+
+.loading .flex-viewport
+  max-height: 300px
+
+.flexslider .slides
+  zoom: 1
+  position: relative
+
+.carousel li
+  margin-right: 5px
+
+.flex-direction-nav
+  display: none
+  width: 100%
+  height: 28px
+  position: absolute
+  top: 80px
+  left: 0
+  cursor: pointer
+  text-align: center
+  transition: all .2s linear
+  -moz-transition: all .2s linear
+  -webkit-transition: all .2s linear
+  -o-transition: all .2s linear
+
+.flex-direction-nav .flex-next
+  width: 26px
+  height: 28px
+  float: right
+  margin-right: 70px
+  text-decoration: none
+  transition: all .2s linear
+  -moz-transition: all .2s linear
+  -webkit-transition: all .2s linear
+  -o-transition: all .2s linear
+
+.flex-direction-nav .flex-prev
+  width: 26px
+  height: 28px
+  float: left
+  margin-left: 70px
+  text-decoration: none
+  transition: all .2s linear
+  -moz-transition: all .2s linear
+  -webkit-transition: all .2s linear
+  -o-transition: all .2s linear
+
+.flex-direction-nav .flex-next:after
+  content: '\f061'
+  font-family: FontAwesome
+  font-size: 30px
+  color: #fff
+  line-height: 40px
+
+.flex-direction-nav .flex-prev:after
+  content: '\f060'
+  font-family: FontAwesome
+  font-size: 30px
+  color: #fff
+  line-height: 40px
+
+.flexslider .flex-next:hover,
+.flexslider .flex-prev:hover
+  transform: scale(1.15)
+  -webkit-transform: scale(1.15)
+  -moz-transform: scale(1.15)
+  -o-transform: scale(1.15)
+
+.flex-control-nav
+  min-width: 100px
+  position: absolute
+  bottom: -35px
+  left: 50%
+  margin-left: -45px
+  text-align: center
+
+.flex-control-nav li
+  margin: 0 6px
+  display: inline-block
+  zoom: 1
+
+.flex-control-paging li a
+  width: 10px
+  height: 10px
+  display: block
+  cursor: pointer
+  text-indent: -9999px
+  border: 1px solid #fff
+  border-radius: 50%
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  -o-border-radius: 50%
+
+.flex-control-paging li a:hover
+  opacity: .9
+
+.flex-control-paging li a.flex-active
+  background: #fff
+
+.flex-control-thumbs
+  margin: 5px 0 0
+  position: static
+  overflow: hidden
+
+.flex-control-thumbs li
+  width: 25%
+  float: left
+  margin: 0
+
+.flex-control-thumbs img
+  width: 100%
+  display: block
+  opacity: .7
+  cursor: pointer
+
+.flex-control-thumbs img:hover
+  opacity: 1
+
+.flex-control-thumbs .flex-active
+  opacity: 1
+  cursor: default
+
+#first-popup .flex-direction-nav
+  top: 50%
+  margin-top: -13px
+
+#first-popup .flex-direction-nav .flex-next
+  margin-right: 7px
+
+#first-popup .flex-direction-nav .flex-prev
+  margin-left: 7px
+
+.bx-wrapper
+  position: relative
+  margin: 0 auto
+  padding: 0
+
+.bx-wrapper img
+  max-width: 100%
+  display: block
+
+.bx-wrapper .bx-controls-auto,
+.bx-wrapper .bx-pager
+  position: absolute
+  bottom: -30px
+  width: 100%
+
+.bx-wrapper .bx-loading
+  min-height: 50px
+  background: url(../images/bx_loader.gif) center center no-repeat #fff
+  height: 100%
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 2000
+
+.bx-controls
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  text-align: center
+
+.bx-wrapper .bx-pager
+  text-align: center
+  font-size: .85em
+  font-family: Arial
+  font-weight: 700
+  color: #666
+  padding-top: 0
+  z-index: 4
+
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item,
+.bx-wrapper .bx-pager .bx-pager-item
+  display: inline-block
+
+.bx-wrapper .bx-pager.bx-default-pager a
+  background: 0 0
+  border: 1px solid #fff
+  text-indent: 9999px
+  display: block
+  width: 10px
+  height: 10px
+  margin: 0 5px
+  outline: 0
+  -o-border-radius: 50%
+  -moz-border-radius: 50%
+  -webkit-border-radius: 50%
+  border-radius: 50%
+
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:hover
+  background: #fff
+
+.bx-wrapper .bx-controls-direction a
+  display: none
+  position: absolute
+  top: 50%
+  margin-top: -56px
+  outline: 0
+  width: 64px
+  height: 112px
+  text-indent: -9999px
+  z-index: 9999
+  border: 1px solid #fff
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+.bx-wrapper .bx-prev
+  left: -1px
+  border-top-right-radius: 20px
+  -webkit-border-top-right-radius: 20px
+  -moz-border-top-right-radius: 20px
+  -o-border-top-right-radius: 20px
+  border-bottom-right-radius: 20px
+  -webkit-border-bottom-right-radius: 20px
+  -moz-border-bottom-right-radius: 20px
+  -o-border-bottom-right-radius: 20px
+
+.bx-wrapper .bx-next
+  right: -1px
+  border-top-left-radius: 20px
+  -webkit-border-top-left-radius: 20px
+  -moz-border-top-left-radius: 20px
+  -o-border-top-left-radius: 20px
+  border-bottom-left-radius: 20px
+  -webkit-border-bottom-left-radius: 20px
+  -moz-border-bottom-left-radius: 20px
+  -o-border-bottom-left-radius: 20px
+
+.bx-wrapper .bx-controls-direction a.disabled
+  display: none
+
+.bx-wrapper .bx-controls-auto
+  text-align: center
+
+.bx-wrapper .bx-controls-auto .bx-start
+  display: block
+  text-indent: -9999px
+  width: 10px
+  height: 11px
+  outline: 0
+  background: url(images/controls.png) -86px -11px no-repeat
+  margin: 0 3px
+
+.bx-wrapper .bx-controls-auto .bx-start.active,
+.bx-wrapper .bx-controls-auto .bx-start:hover
+  background-position: -86px 0
+
+.bx-wrapper .bx-controls-auto .bx-stop
+  display: block
+  text-indent: -9999px
+  width: 9px
+  height: 11px
+  outline: 0
+  background: url(images/controls.png) -86px -44px no-repeat
+  margin: 0 3px
+
+.bx-wrapper .bx-controls-auto .bx-stop.active,
+.bx-wrapper .bx-controls-auto .bx-stop:hover
+  background-position: -86px -33px
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager
+  text-align: left
+  width: 80%
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto
+  right: 0
+  width: 35px
+
+.bx-wrapper .bx-caption
+  position: absolute
+  bottom: 0
+  left: 0
+  background: rgba(80,80,80,.75)
+  width: 100%
+
+.bx-wrapper .bx-caption span
+  color: #fff
+  font-family: Arial
+  display: block
+  font-size: .85em
+  padding: 10px
+
+body
+  color: #fff!important
+  background-color: #333!important
+
+img
+  vertical-align: middle!important
+  box-shadow: 0 0 20px #000!important
+
+.isotope-item
+  z-index: 2
+
+.isotope-hidden.isotope-item
+  pointer-events: none
+  z-index: 1
+
+.isotope,
+.isotope .isotope-item
+  -webkit-transition-duration: .8s
+  -moz-transition-duration: .8s
+  transition-duration: .8s
+
+.isotope
+  -webkit-transition-property: height,width
+  -moz-transition-property: height,width
+  transition-property: height,width
+
+.isotope .isotope-item
+  -webkit-transition-property: -webkit-transform,opacity
+  -moz-transition-property: -moz-transform,opacity
+  transition-property: transform,opacity
+
+header
+  z-index: 99999
+
+.navbar
+  width: 100%
+  margin-bottom: 0
+  background: #444
+  box-shadow: none
+  -webkit-box-shadow: 0 0 40px #000
+  -moz-box-shadow: 0 0 40px #000
+  -o-box-shadow: 0 0 40px #000
+  border-bottom: 1px solid #000
+
+.navbar-nav.navbar-right:last-child
+  margin-right: 0
+
+.navbar.active
+  position: fixed
+  opacity: .95
+
+.navbar-brand
+  padding: 17px 15px
+  height: auto
+
+.innher-header
+  padding: 0 15px
+
+.navbar-nav
+  margin-top: 40px
+  margin-bottom: 35px
+
+.navbar-default .navbar-nav>li
+  margin-left: 32px
+
+.navbar-default .navbar-nav>li:first-child
+  margin-left: 0
+
+.navbar-default .navbar-nav>li>a
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  padding: 0
+  position: relative
+  text-transform: uppercase
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+.navbar-default .navbar-nav>li>a.active,
+.navbar-default .navbar-nav>li>a:hover
+  color: #f13f0f
+
+#container
+  opacity: 0
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+#container.active
+  opacity: 1
+
+.preloader
+  position: fixed
+  top: 50%
+  left: 50%
+  width: 100px
+  height: 103px
+  margin-top: -56px
+  margin-left: -50px
+  -webkit-backface-visibility: hidden
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+.preloader img
+  -webkit-backface-visibility: hidden
+
+#home-section
+  background: url(../upload/photo2.jpg)
+  position: relative
+
+#home-section:after
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: url(../images/pattern.png)
+
+a.discover
+  position: absolute
+  z-index: 2
+  bottom: 0
+  left: 50%
+  margin-left: -95px
+  width: 190px
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  text-transform: uppercase
+  color: #fff!important
+  background: #F44336
+  padding: 16px 5px
+  box-shadow: 0 0 20px #000
+  text-align: center
+  text-decoration: none!important
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+a.discover:hover
+  opacity: .8
+
+#home-section .flexslider
+  top: 50%
+  margin-top: -90px
+  position: absolute
+  width: 100%
+  z-index: 99
+
+.flexcaption
+  max-width: 1170px
+  padding: 0 15px
+  margin: 0 auto
+  text-align: center
+
+.flexcaption h1
+  color: #fff
+  font-size: 72px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  margin: 0 0 20px
+
+.flexcaption h1 span
+  display: inline-block
+  font-weight: 700
+
+.flexcaption h1 span.diff-color
+  color: #2bb6b6
+
+.flexcaption div
+  width: 170px
+  height: 1px
+  margin: 0 auto 30px!important
+  text-align: center
+  position: relative
+
+.flexcaption div:after
+  width: 100%
+  height: 1px
+  background: #fff
+  position: absolute
+  top: 5px
+  left: 0
+  content: ''
+
+.flexcaption div span
+  width: 10px
+  height: 10px
+  border: 3px solid #8a8a8a
+  display: block
+  margin: auto
+  background: #fff
+  border-radius: 50%
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  -o-border-radius: 50%
+  z-index: 2
+  position: relative
+
+.flexcaption>p
+  color: #c8c8c8
+  font-size: 18px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  line-height: 27px
+  margin: 0 auto 25px
+
+#about-section
+  text-align: center
+  padding: 110px 0
+
+.title-section
+  margin-bottom: 65px
+  text-align: center
+
+.title-section h1
+  color: #252525
+  font-size: 36px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  margin: 0 0 20px
+
+.title-section div.dotted-line
+  width: 170px
+  height: 1px
+  margin: 0 auto 25px
+  text-align: center
+  position: relative
+
+.title-section div.dotted-line:after
+  width: 100%
+  height: 1px
+  background: #252525
+  position: absolute
+  top: 5px
+  left: 0
+  content: ''
+
+.title-section div.dotted-line span
+  width: 10px
+  height: 10px
+  border: 3px solid #fff
+  display: block
+  margin: auto
+  background: #252525
+  border-radius: 50%
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  -o-border-radius: 50%
+  z-index: 2
+  position: relative
+
+.title-section p
+  color: #818181
+  font-size: 18px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  line-height: 25px
+  margin: 0
+
+.title-section.white h1
+  color: #fff
+
+.title-section.white div.dotted-line:after
+  background: #fff
+
+.title-section.white div.dotted-line span
+  border: 3px solid #8a8a8a
+  background: #fff
+
+.title-section.white p
+  color: #fff
+
+.services-post
+  margin-bottom: 30px
+
+.services-post a
+  display: inline-block
+  width: 90px
+  height: 90px
+  text-decoration: none
+  border: 1px solid #272727
+  background: #272727
+  border-radius: 50%
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  -o-border-radius: 50%
+  text-align: center
+  margin-bottom: 35px
+  position: relative
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+.services-post a:after
+  position: absolute
+  content: ''
+  width: 94px
+  height: 94px
+  border: 1px solid transparent
+  box-shadow: 0 0 15px #000
+  top: -3px
+  left: -3px
+  border-radius: 50%
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  -o-border-radius: 50%
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+.services-post a i
+  color: #f13f0f
+  font-size: 36px
+  line-height: 90px
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+.services-post:hover a
+  border: 1px solid #f13f0f
+  background: #f13f0f
+
+.services-post:hover a:after
+  border: 1px solid #F44336
+
+.services-post:hover a i
+  color: #fff
+
+.services-post h2
+  color: #252525
+  font-size: 18px
+  font-family: Roboto,sans-serif
+  font-weight: 400
+  text-transform: uppercase
+  margin: 0 0 20px
+
+.services-post p
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  line-height: 24px
+  margin: 0
+
+#portfolio-section
+  padding: 110px 0
+  background: #000
+  box-shadow: 0 0 30px #000
+
+ul.filter
+  padding: 0
+  text-align: center
+  margin-bottom: 45px
+
+ul.filter li
+  list-style: none
+  display: inline-block
+  margin-left: 12px
+
+ul.filter li:first-child
+  margin-left: 0
+
+ul.filter li a
+  display: inline-block
+  color: #818181
+  font-size: 12px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  position: relative
+  text-decoration: none
+  padding: 6px 11px
+  border: 1px solid #818181
+  border-radius: 1px
+  -webkit-border-radius: 1px
+  -moz-border-radius: 1px
+  -o-border-radius: 1px
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+ul.filter li a.active,
+ul.filter li a:hover
+  color: #f13f0f
+  border: 1px solid #f13f0f
+
+.portfolio-container
+  width: 1142px
+  margin-left: -1px
+
+.portfolio-container .work-post
+  margin: 1px
+  width: 283px
+  position: relative
+  overflow: hidden
+
+.portfolio-container .work-post.scnd-size
+  width: 568px
+
+.portfolio-container .work-post:hover
+  overflow: visible
+
+.portfolio-container .work-post img
+  width: 100%
+
+.hover-box
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(25,25,25,.97)
+  text-decoration: none!important
+  text-align: left
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+  transform: scale(0)
+  -webkit-transform: scale(0)
+  -moz-transform: scale(0)
+  -o-transform: scale(0)
+  opacity: 0
+  visibility: hidden
+  -webkit-backface-visibility: hidden
+
+.work-post:hover .hover-box
+  opacity: 1
+  visibility: visible
+  transform: scale(1)
+  -webkit-transform: scale(1)
+  -moz-transform: scale(1)
+  -o-transform: scale(1)
+
+.inner-hover
+  position: relative
+  height: 70px
+  top: 50%
+  margin-top: -35px
+  width: 100%
+  padding: 0 45px
+
+.inner-hover h2
+  color: #fff
+  font-size: 24px
+  font-family: Roboto,sans-serif
+  font-weight: 400
+  text-transform: uppercase
+  margin: 0 0 20px
+  transition: all .45s ease-in-out
+  -moz-transition: all .45s ease-in-out
+  -webkit-transition: all .45s ease-in-out
+  -o-transition: all .45s ease-in-out
+  transform: rotate(90deg) scale(0.2)
+  -webkit-transform: rotate(90deg) scale(0.2)
+  -moz-transform: rotate(90deg) scale(0.2)
+  -o-transform: rotate(90deg) scale(0.2)
+
+.inner-hover span
+  display: inline-block
+  background: #333
+  padding: 5px 12px
+  color: #F44336
+  font-size: 11px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  transition: all .45s ease-in-out
+  -moz-transition: all .45s ease-in-out
+  -webkit-transition: all .45s ease-in-out
+  -o-transition: all .45s ease-in-out
+  transform: rotate(90deg) scale(0.2)
+  -webkit-transform: rotate(90deg) scale(0.2)
+  -moz-transform: rotate(90deg) scale(0.2)
+  -o-transform: rotate(90deg) scale(0.2)
+
+.work-post:hover .inner-hover h2,
+.work-post:hover .inner-hover span
+  transform: rotate(0deg) scale(1)
+  -webkit-transform: rotate(0deg) scale(1)
+  -moz-transform: rotate(0deg) scale(1)
+  -o-transform: rotate(0deg) scale(1)
+
+#testimonial-section
+  background: url(../upload/back.jpg)
+  padding: 160px 0
+  position: relative
+  text-align: center
+
+#testimonial-section:after
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: url(../images/pattern.png)
+
+#testimonial-section .container
+  z-index: 2
+  position: relative
+
+.testimonial ul
+  margin: 0
+  padding: 0
+
+.testimonial ul li
+  list-style: none
+
+.testimonial ul li p
+  color: #fff
+  font-size: 36px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  line-height: 60px
+  margin: 0 0 20px
+
+.testimonial ul li p span
+  color: #f13f0f
+
+.testimonial ul li>span
+  color: #fff
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+
+#team-section
+  padding: 110px 0
+
+.staff-post
+  margin-bottom: 15px
+  text-align: center
+
+.staff-post-gal
+  position: relative
+
+.hover-team
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: #252525
+  opacity: 0
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+  transform: scale(0)
+  -webkit-transform: scale(0)
+  -moz-transform: scale(0)
+  -o-transform: scale(0)
+
+.staff-post:hover .hover-team
+  opacity: 1
+  transform: scale(1)
+  -webkit-transform: scale(1)
+  -moz-transform: scale(1)
+  -o-transform: scale(1)
+
+.staff-post img
+  width: 100%
+
+.staff-post-content
+  padding: 20px 10px
+
+.staff-post-content h3
+  color: #252525
+  font-size: 18px
+  font-family: Roboto,sans-serif
+  text-transform: uppercase
+  font-weight: 300
+  margin: 0 0 5px
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+.staff-post span
+  display: inline-block
+  color: #fff
+  font-size: 17px
+  font-family: Roboto,sans-serif
+  text-transform: uppercase
+  font-weight: 300
+  margin: 0 0 20px
+
+.staff-post:hover .staff-post-content h3
+  color: #f13f0f
+
+.inner-team
+  width: 100%
+  position: relative
+  top: 50%
+  margin-top: -35px
+  left: 0
+
+ul.staf-social
+  display: block
+  padding: 0
+  margin: 0
+
+ul.staf-social li
+  display: inline-block
+  margin-left: 11px
+
+ul.staf-social li:first-child
+  margin-left: 0
+
+ul.staf-social li a
+  display: inline-block
+  width: 30px
+  height: 30px
+  background: #333
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+  text-align: center
+  text-decoration: none
+
+ul.staf-social li a i
+  display: inline-block
+  line-height: 30px
+  font-size: 14px
+  color: #616161
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+  -webkit-backface-visibility: hidden
+
+ul.staf-social li a:hover i
+  color: #fff
+
+ul.staf-social li a:hover
+  background: #f13f0f
+
+#statistic-section
+  padding: 110px 0
+  background: #000
+  text-align: center
+  box-shadow: 0 0 30px #000
+
+.statistic-counter p
+  color: #252525
+  font-size: 16px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  margin: 0
+
+.statistic-counter p span.timer
+  display: inline-block
+  color: #252525
+  font-size: 102px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  margin-bottom: 10px
+  line-height: 90px
+
+#client-section
+  position: relative
+  padding: 105px 0
+
+#client-section:after
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: url(../images/pattern.png)
+
+#client-section .container
+  position: relative
+  z-index: 2
+
+#customElement
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  background: #000
+
+ul.client-list
+  padding: 0
+  margin: 0
+  overflow: hidden
+
+ul.client-list li
+  list-style: none
+  float: left
+  width: 16.6666%
+
+ul.client-list li a
+  display: inline-block
+  width: 100%
+  text-align: center
+  border: 1px solid transparent
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+ul.client-list li a:hover
+  border: 1px solid #fff
+
+ul.client-list li a img
+  max-width: 100%
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+ul.client-list li a:hover img
+  opacity: .9
+
+#services-section
+  padding: 110px 0
+  text-align: center
+
+.services-box2 .services-post a
+  width: 60px
+  height: 60px
+  transform: rotate(45deg)
+  -webkit-transform: rotate(45deg)
+  -moz-transform: rotate(45deg)
+  -o-transform: rotate(45deg)
+  border-radius: 2px
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  -o-border-radius: 2px
+
+.services-box2 .services-post a i
+  font-size: 28px
+  line-height: 60px
+  transform: rotate(-45deg)
+  -webkit-transform: rotate(-45deg)
+  -moz-transform: rotate(-45deg)
+  -o-transform: rotate(-45deg)
+
+.services-box2 .services-post a:after
+  width: 64px
+  height: 64px
+  border-radius: 2px
+  -webkit-border-radius: 2px
+  -moz-border-radius: 2px
+  -o-border-radius: 2px
+
+#tweet-section
+  padding: 110px 0
+  text-align: center
+  background: url(../upload/back2.jpg)
+  position: relative
+  overflow: hidden
+
+#tweet-section:after
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: url(../images/pattern.png)
+
+#tweet-section .container
+  position: relative
+  z-index: 2
+
+span.tweet-icon
+  display: inline-block
+  width: 88px
+  height: 88px
+  text-align: center
+  background: #262626
+  box-shadow: 0 0 20px #000
+  border-radius: 50%
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  -o-border-radius: 50%
+  margin-bottom: 45px
+
+span.tweet-icon i
+  line-height: 88px
+  font-size: 36px
+  color: #000
+
+ul.bxslider li p
+  color: #fff
+  font-size: 36px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  margin: 0 0 22px
+
+ul.bxslider li p a
+  color: #f13f0f
+  text-decoration: none
+
+ul.bxslider li span
+  display: inline-block
+  color: #fff
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  margin: 0 0 45px
+
+#price-section
+  padding: 110px 0
+
+ul.pricing-table
+  width: 100%
+  padding: 0
+  margin: 0 0 15px
+  box-shadow: 0 0 15px #000
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+ul.pricing-table:hover
+  box-shadow: 0 0 15px #e2e2e2
+
+ul.pricing-table li
+  width: 100%
+  list-style: none
+  text-align: center
+  padding: 27px 0
+  background: #3a3a3a
+
+ul.pricing-table li p
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  margin: 0
+
+ul.pricing-table li.title
+  background: #000
+
+ul.pricing-table li.price
+  background: #f8f8f8
+
+ul.pricing-table li.title p
+  color: #F44336
+  font-size: 18px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  margin: 0
+
+ul.pricing-table li.price p
+  color: #252525
+  text-transform: uppercase
+
+ul.pricing-table li.price p span
+  display: block
+  color: #252525
+  font-size: 60px
+  line-height: 60px
+
+ul.pricing-table li.button-sign
+  padding: 20px 0
+
+ul.pricing-table li a
+  display: inline-block
+  padding: 16px 45px
+  color: #252525
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 400
+  background: 0 0
+  text-transform: uppercase
+  margin: 0
+  text-decoration: none
+  transition: all .17s ease-in-out
+  -moz-transition: all .17s ease-in-out
+  -webkit-transition: all .17s ease-in-out
+  -o-transition: all .17s ease-in-out
+
+ul.pricing-table:hover li a
+  color: #fff
+  background: #f13f0f
+
+#contact-section
+  padding: 110px 0
+  background: #000
+  box-shadow: 0 0 30px #000
+
+.map
+  height: 470px
+
+.contact-box
+  padding: 75px 0 0
+
+.contact-box h2
+  color: #252525
+  font-size: 18px
+  font-family: Roboto,sans-serif
+  font-weight: 400
+  margin: 0 0 25px
+  text-transform: uppercase
+
+.contact-box p
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  margin: 0 0 30px
+  line-height: 24px
+
+.contact-list
+  margin: 0
+  padding: 0
+
+.contact-list li
+  margin-bottom: 22px
+  list-style: none
+
+.contact-list li span
+  float: left
+  width: 37px
+  height: 37px
+  border: 1px solid #818181
+  border-radius: 50%
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  -o-border-radius: 50%
+  text-align: center
+
+.contact-list li span i
+  font-size: 14px
+  line-height: 37px
+  color: #333
+
+.contact-list li p
+  margin-left: 60px
+  line-height: 37px
+
+#contact-form input[type=text],
+#contact-form textarea,
+.comment-form input[type=text],
+.comment-form textarea
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  background: #252525
+  border: none
+  border-radius: 0
+  -webkit-border-radius: 0
+  -moz-border-radius: 0
+  -o-border-radius: 0
+  outline: 0
+  width: 100%
+  padding: 14px 20px
+  display: block
+  margin-bottom: 15px
+  transition: all .2s ease-in-out
+  -moz-transition: all .2s ease-in-out
+  -webkit-transition: all .2s ease-in-out
+  -o-transition: all .2s ease-in-out
+
+#contact-form textarea,
+.comment-form textarea
+  height: 136px
+
+#contact-form button,
+.comment-form button
+  width: 125px
+  text-align: center
+  color: #F44336
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 600
+  text-transform: uppercase
+  padding: 12px 0
+  background: #252525
+  margin-bottom: 15px
+  border: none
+  transition: all .2s ease-in-out
+  -moz-transition: all .2s ease-in-out
+  -webkit-transition: all .2s ease-in-out
+  -o-transition: all .2s ease-in-out
+
+#contact-form button:hover,
+.comment-form button:hover
+  opacity: .8
+
+#contact-form .message,
+.comment-form .message
+  height: 20px
+  font-size: 13px
+  font-family: 'Open Sans',sans-serif
+  float: none
+  margin-top: 5px
+
+#contact-form .message.error,
+.comment-form .message.error
+  color: #eb2c06
+
+#contact-form .message.success,
+.comment-form .message.success
+  color: #1e9397
+
+#singlepost-section
+  padding: 170px 0 100px
+
+.post-head
+  overflow: hidden
+  padding-bottom: 30px
+  margin-bottom: 30px
+  border-bottom: 1px solid #252525
+
+.post-head h1
+  float: left
+  color: #252525
+  font-size: 36px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  margin: 0
+
+ul.navigate-posts
+  float: right
+  padding: 0
+  margin: 0
+
+ul.navigate-posts li
+  display: inline-block
+  margin-left: 30px
+
+ul.navigate-posts li a
+  display: inline-block
+
+ul.navigate-posts li a i
+  font-size: 24px
+  color: #252525
+  transition: all .2s ease-in-out
+  -moz-transition: all .2s ease-in-out
+  -webkit-transition: all .2s ease-in-out
+  -o-transition: all .2s ease-in-out
+
+ul.navigate-posts li a.show-post i
+  font-size: 18px
+
+ul.navigate-posts li a:hover i
+  color: #f13f0f
+
+ul.tag-post
+  padding: 0
+  margin: 0 0 30px
+
+ul.tag-post li
+  display: inline-block
+  margin-right: 15px
+
+ul.tag-post li a
+  display: inline-block
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  text-decoration: none
+  transition: all .2s ease-in-out
+  -moz-transition: all .2s ease-in-out
+  -webkit-transition: all .2s ease-in-out
+  -o-transition: all .2s ease-in-out
+
+ul.tag-post li a i
+  font-size: 15px
+  margin-right: 8px
+
+ul.tag-post li a:hover
+  color: #f13f0f
+
+#singlepost-section .flexslider
+  margin-bottom: 30px
+
+#singlepost-section .flexslider .flex-control-nav
+  bottom: 30px
+
+#singlepost-section p
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  line-height: 24px
+  margin: 0 0 30px
+
+.share-box
+  padding: 20px 0
+  border-top: 1px solid #dfdfdf
+  border-bottom: 1px solid #dfdfdf
+  margin-bottom: 30px
+  overflow: hidden
+
+.share-box span
+  display: inline-block
+  float: left
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  margin-right: 20px
+
+ul.share-icons
+  padding: 0
+  margin: 0
+  float: left
+
+ul.share-icons li
+  display: inline-block
+  margin-left: 30px
+
+ul.share-icons li a
+  display: inline-block
+
+ul.share-icons li a i
+  font-size: 18px
+  color: #929292
+  transition: all .2s ease-in-out
+  -moz-transition: all .2s ease-in-out
+  -webkit-transition: all .2s ease-in-out
+  -o-transition: all .2s ease-in-out
+
+ul.share-icons li a:hover i
+  color: #252525
+
+.autor-post
+  overflow: hidden
+  border-bottom: 1px solid #dfdfdf
+  padding-bottom: 30px
+  padding-top: 20px
+  margin-bottom: 30px
+
+.autor-post img
+  float: left
+  border-radius: 50%
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  -o-border-radius: 50%
+  max-width: 100px
+  border: 1px solid #dfdfdf
+  padding: 5px
+
+.autor-content
+  margin-left: 130px
+
+.autor-content h4
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  margin: 0 0 20px
+
+.autor-content h4 span
+  color: #252525
+  text-transform: uppercase
+
+.autor-content p
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  line-height: 24px
+  margin: 0 0 20px
+
+.comment-section
+  padding-top: 20px
+  border-bottom: 1px solid #dfdfdf
+  padding-bottom: 30px
+  margin-bottom: 50px
+
+.comment-section h2
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  margin: 0 0 40px
+  text-transform: uppercase
+
+.comment-tree
+  padding: 0
+  margin: 0
+
+.comment-tree li
+  list-style: none
+  margin-bottom: 40px
+  overflow: hidden
+
+.comment-tree li img
+  float: left
+  border-radius: 50%
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  -o-border-radius: 50%
+  max-width: 100px
+  border: 1px solid #dfdfdf
+  padding: 5px
+
+.comment-content
+  margin-left: 130px
+  padding-bottom: 35px
+  border-bottom: 1px solid #eee
+
+.comment-content h6
+  color: #252525
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  margin: 10px 0 20px
+
+.comment-content h6 span
+  float: right
+  color: #818181
+
+.comment-content h6 span a
+  color: #818181
+  text-transform: capitalize
+
+.comment-content p
+  margin: 0!important
+
+.comment-form
+  max-width: 570px
+
+.comment-form h2
+  color: #252525
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  margin: 0 0 30px
+  text-transform: uppercase
+
+.project-details
+  padding-top: 6px
+
+.project-details h2
+  color: #252525
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+  text-transform: uppercase
+  margin: 0 0 25px
+
+.project-details ul.project-list
+  padding: 0
+  margin: 0 0 30px
+
+.project-details ul.project-list li
+  list-style: none
+  margin-bottom: 16px
+  color: #818181
+  font-size: 14px
+  font-family: Roboto,sans-serif
+  font-weight: 300
+
+.project-details ul.project-list li span
+  color: #252525
+
+.project-details ul.project-list li a
+  color: #818181
+
+.project-details .share-box
+  padding: 0
+  border: none
+
+.project-details ul.share-icons li
+  margin-left: 0
+  margin-right: 30px
+
+footer
+  text-align: center
+  background: #252525
+  padding: 40px 0
+
+footer p
+  color: #545454
+  font-size: 12px
+  font-family: Roboto,sans-serif
+  font-weight: 400
+  margin: 0
+
+footer ul.social-icons
+  padding: 0
+  margin: 0 0 15px
+
+footer ul.social-icons li
+  display: inline-block
+  margin-left: 6px
+
+footer ul.social-icons li a
+  display: inline-block
+  width: 30px
+  height: 30px
+  transition: all .2s ease-in-out
+  -moz-transition: all .2s ease-in-out
+  -webkit-transition: all .2s ease-in-out
+  -o-transition: all .2s ease-in-out
+  border: 1px solid #616161
+  text-decoration: none
+
+footer ul.social-icons li a i
+  font-size: 14px
+  color: #616161
+  line-height: 30px
+  -webkit-backface-visibility: hidden
+
+footer ul.social-icons li a:hover
+  border: 1px solid #fff
+
+footer ul.social-icons li a:hover i
+  color: #fff
+
+::-webkit-scrollbar
+  z-index: 30
+  width: 6px
+  height: 0
+  y-index: hidden
+
+::-webkit-scrollbar-track
+  background-color: #121212
+  border-radius: 0
+  box-shadow: none
+  border: 0
+
+::-webkit-scrollbar-thumb
+  background-color: #343434
+  border-radius: 0
+  box-shadow: none
+
+@media (max-width:1199px)
+  .portfolio-container
+    width: 942px
+
+  .portfolio-container .work-post
+    width: 233px
+
+  .portfolio-container .work-post.scnd-size
+    width: 470px
+
+@media (max-width:991px)
+  .navbar>.container .navbar-brand
+    max-width: 250px
+    margin-top: 10px
+
+  .flexcaption h1
+    font-size: 45px
+
+  .flexcaption>p
+    font-size: 18px
+
+  .flex-direction-nav .flex-next
+    margin-right: 7px
+
+  .flex-direction-nav .flex-prev
+    margin-left: 7px
+
+  .innher-header
+    padding: 0
+
+  .navbar-brand
+    max-width: 300px
+
+  .navbar-brand img
+    max-width: 100%
+
+  .navbar-default .navbar-nav>li
+    margin-left: 1px
+
+  .navbar-default .navbar-nav>li>a
+    padding: 0 6px
+    font-size: 13px
+
+  .portfolio-container
+    width: 100%
+    margin-left: 0
+
+  .portfolio-container .work-post,
+  .portfolio-container .work-post.scnd-size
+    width: 100%
+    margin: 1px 0
+
+  ul.filter li
+    margin-bottom: 2px
+
+  .statistic-post
+    margin-bottom: 25px
+
+  footer p,
+  ul.social-icons
+    float: none
+    text-align: center
+
+  ul.depth
+    margin-left: 0
+
+  ul.depth li:before
+    display: none
+
+  ul.pricing-table
+    margin-bottom: 40px
+
+@media (max-width:767px)
+  .navbar>.container .navbar-brand
+    margin-top: 4px
+    max-width: 100%
+
+  .flexcaption h1
+    font-size: 36px
+    margin-bottom: 10px
+
+  .flexcaption>p
+    font-size: 16px
+
+  .navbar-toggle
+    margin-top: 30px
+
+  .navbar-brand
+    max-width: 100%
+
+  .navbar-collapse
+    position: relative
+    z-index: 9999999
+    -webkit-backface-visibility: hidden
+
+  .navbar-default .navbar-nav>li
+    margin-left: 30px!important
+    -webkit-backface-visibility: hidden
+
+  .navbar-default .navbar-nav>li>a
+    padding: 6px
+    font-size: 16px
+    -webkit-backface-visibility: hidden
+
+  .navbar-default .navbar-nav>li>a.active,
+  .navbar-default .navbar-nav>li>a:hover
+    color: #f13f0f
+
+  ul.filter li
+    margin-bottom: 5px
+
+  .portfolio-container
+    width: 100%
+    margin-left: 0
+
+  .portfolio-container .work-post,
+  .portfolio-container .work-post.scnd-size
+    width: 100%
+    margin: 1px 0
+
+  ul.clients-logo li
+    width: 48%
+    margin-left: 4%
+
+  ul.clients-logo li:nth-child(2n+1)
+    margin-left: 0
+
+  .submit-area,
+  .text-fields
+    float: none
+    width: 100%
+    padding: 0
+
+  ul.social-icons li a
+    width: 50px
+    height: 50px
+
+  ul.social-icons li a i
+    line-height: 50px
+    font-size: 24px
+
+  ul.social-icons li
+    margin-left: 5px
+
