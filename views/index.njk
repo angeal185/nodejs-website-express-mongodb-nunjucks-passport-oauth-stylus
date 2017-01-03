@@ -1,0 +1,23 @@
+{% extends 'layout.njk' %}
+{% block content %}
+{% include 'includes/_home.njk' %}
+{% include 'includes/_header.njk' %}
+{% include 'includes/_about.njk' %}
+{% include 'includes/_testimonial.njk' %}
+{% include 'includes/_team.njk' %}
+{% include 'includes/_statistic.njk' %}
+{% include 'includes/_client.njk' %}
+{% include 'includes/_services.njk' %}
+{% include 'includes/_portfolio.njk' %}
+{% include 'includes/_tweet.njk' %}
+{% include 'includes/_price.njk' %}
+{% include 'includes/_contact.njk' %}
+{% include 'includes/_footer.njk' %}
+{% endblock %}
+{% block scripts %}
+<script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
+{% endblock %}

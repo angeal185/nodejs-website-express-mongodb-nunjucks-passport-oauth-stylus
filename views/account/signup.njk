@@ -1,0 +1,82 @@
+{% extends 'layout.njk' %}
+{% block style %}
+<style>	
+input{
+	border-radius: 6px;
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+    height: 50px;
+}
+block{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+label{
+	font-size:24px;
+}
+h1{
+	text-align:center;
+	}
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #272525;
+	border:none;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 50px rgb(0, 0, 0);
+    box-shadow:  0 0 50px rgb(0, 0, 0);
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #333;
+    background-image: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px black;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+</style>	
+{% endblock %}
+{% block content %}
+<div class="container">
+<div class="page-header">
+  <h3>Sign up</h3>
+</div>
+<form id="signup-form" method="POST" class="form-horizontal"><input type="hidden" name="_csrf" value="{{_csrf}}">
+  <div class="form-group"><label for="email" class="col-sm-3 control-label">Email</label>
+    <div class="col-sm-7"><input type="email" name="email" id="email" placeholder="Email" autofocus required class="form-control"></div>
+  </div>
+  <div class="form-group"><label for="password" class="col-sm-3 control-label">Password</label>
+    <div class="col-sm-7"><input type="password" name="password" id="password" placeholder="Password" required class="form-control"></div>
+  </div>
+  <div class="form-group"><label for="confirmPassword" class="col-sm-3 control-label">Confirm Password</label>
+    <div class="col-sm-7"><input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required class="form-control"></div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-7"><button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i>Signup</button></div>
+  </div>
+</form>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+$('h1, label').attr({'class':'well'});
+</script>
+{% endblock %}

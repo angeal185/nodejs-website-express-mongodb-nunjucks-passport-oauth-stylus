@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js csstransforms csstransforms3d csstransitions webkit chrome win js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{{title}}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="csrf-token" content="{{_csrf}}">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" media="screen">
+<link rel="stylesheet" type="text/css" href="./css/styles.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.0.9/css/jquery.mb.YTPlayer.min.css" media="screen">
+{% block style %}{% endblock %}
+</head>
+<body>
+<div id="container" class="active">
+{% block content %}{% endblock %}
+</div>
+{% include 'includes/_scripts.njk' %}
+{% block scripts %}{% endblock %}
+<script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<header class="clearfix" style="height: 96px;">
+	<!-- Static navbar -->
+	<div class="navbar navbar-default navbar-static-top active" style="top: 0px;">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img alt="" src="./img/logo-top.png" style="height:60px"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="" href="#home-section" class="active">Home</a></li>
+					<li><a href="#about-section" class="">About</a></li>
+					<li><a href="#team-section" class="">Team</a></li>
+					<li><a href="#services-section" class="">Services</a></li>
+					<li><a href="#portfolio-section" class="">Portfolio</a></li>
+					<li><a href="#contact-section" class="">Contact Us</a></li>
+					{% if not user %}
+					<li><a href="/login" class="active">Signin</a></li>
+					{% else %}
+					<li><a href="/account" class="active">Profile</a></li>
+					<li><a href="/logout" class="active">Signout</a></li>
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>

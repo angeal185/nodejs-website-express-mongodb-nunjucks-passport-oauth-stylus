@@ -1,0 +1,134 @@
+{% extends 'layout.njk' %}
+{% block style %}
+<style>	
+input{
+	border-radius: 6px;
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
+    height: 50px;
+}
+block{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+label{
+	font-size:24px;
+}
+h1{
+	text-align:center;
+	}
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #272525;
+	border:none;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 50px rgb(0, 0, 0);
+    box-shadow:  0 0 50px rgb(0, 0, 0);
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #333;
+    background-image: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px black;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+</style>	
+{% endblock %}
+{% block content %}
+<main class="cd-main container">
+<div class="padding-top-bottom white-background" style="margin:80px">
+<h1>{{title}}</h1>
+<div class="page-header">
+  <h3>Profile Information</h3>
+</div>
+<form action="/account/profile" method="POST" class="form-horizontal"><input type="hidden" name="_csrf" value="{{_csrf}}">
+  <div class="form-group"><label for="email" class="control-label">Email</label>
+    <div><input type="email" name="email" id="email" value="{{user.email}}" class="form-control"></div>
+  </div>
+  <div class="form-group"><label for="name" class="control-label">Name</label>
+    <div><input type="text" name="name" id="name" value="{{user.profile.name}}" class="form-control"></div>
+  </div>
+  <div class="form-group"><label for="gender" class="control-label">Gender</label>
+    <div><label class="radio"><input type="radio" checked="{{user.profile.gender=='male'}}" name="gender" value="male" data-toggle="radio"><span>Male</span></label><label class="radio"><input type="radio" checked="{{user.profile.gender=='female'}}" name="gender" value="female" data-toggle="radio"><span>Female</span></label>
+      <label
+        class="radio"><input type="radio" checked="{{user.profile.gender=='other'}}" name="gender" value="other" data-toggle="radio"><span>Other</span></label>
+    </div>
+  </div>
+  <div class="form-group"><label for="location" class="control-label">Location</label>
+    <div><input type="text" name="location" id="location" value="{{user.profile.location}}" class="form-control"></div>
+  </div>
+  <div class="form-group"><label for="website" class="control-label">Website</label>
+    <div><input type="text" name="website" id="website" value="{{user.profile.website}}" class="form-control"></div>
+  </div>
+  <div class="form-group"><label for="gravatar" class="control-label">Gravatar</label>
+    <div><img src="{{""}}{{(user.gravatar())}}{{""}}" width="100" height="100" class="profile"></div>
+  </div>
+  <div class="form-group">
+    <div class=""><button type="submit" class="btn btn btn-primary"><i class="fa fa-pencil"></i>Update Profile</button></div>
+  </div>
+</form>
+<div class="page-header">
+  <h3>Change Password</h3>
+</div>
+<form action="/account/password" method="POST" class="form-horizontal"><input type="hidden" name="_csrf" value="{{_csrf}}">
+  <div class="form-group"><label for="password" class="control-label">New Password</label>
+    <div><input type="password" name="password" id="password" class="form-control"></div>
+  </div>
+  <div class="form-group"><label for="confirmPassword" class="control-label">Confirm Password</label>
+    <div><input type="password" name="confirmPassword" id="confirmPassword" class="form-control"></div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-4"><button type="submit" class="btn btn-primary"><i class="fa fa-lock"></i>Change Password</button></div>
+  </div>
+</form>
+<div class="page-header">
+  <h3>Delete Account</h3>
+</div>
+<form action="/account/delete" method="POST" class="form-horizontal">
+  <div class="form-group">
+    <p class="col-sm-offset-3 col-sm-4">You can delete your account, but keep in mind this action is irreversible.</p><input type="hidden" name="_csrf" value="{{_csrf}}">
+    <div class="col-sm-offset-3 col-sm-4"><button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i>Delete my account</button></div>
+  </div>
+</form>
+<div class="page-header">
+  <h3>Linked Accounts</h3>
+</div>
+<div class="form-horizontal">
+  <div class="form-group">
+    <div>
+      {% if user.github %}
+        <a href="/account/unlink/github" class="btn btn-default"><i class="fa fa-github"></i> Unlink your GitHub account</a>
+      {% else %}
+        <a href="/auth/github" class="btn btn-default"><i class="fa fa-github"></i> Link your GitHub account</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+</div>
+</main>
+{% endblock %}
+{% block scripts %}
+<script>
+$('h1, label').attr({'class':'well'});
+</script>
+{% endblock %}
