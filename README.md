@@ -13,8 +13,7 @@ $ npm install
 $ gulp
 
 
-user: admin@admin.com
-pass: password
+/signup
 ```
 
 Done
